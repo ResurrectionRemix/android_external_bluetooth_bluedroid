@@ -18,6 +18,8 @@ ifneq ($(BOARD_BLUETOOTH_BDROID_HCILP_INCLUDED),)
   bdroid_CFLAGS += -DHCILP_INCLUDED=$(BOARD_BLUETOOTH_BDROID_HCILP_INCLUDED)
 endif
 
+bdroid_CFLAGS += -Os
+
 include $(call all-subdir-makefiles)
 
 # Cleanup our locals
